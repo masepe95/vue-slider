@@ -1,0 +1,42 @@
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#thumbnails img {
+  position: relative;
+  filter: grayscale(1);
+}
+.container {
+  margin-top: 150px;
+  position: relative;
+}
+#gallery {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+#thumbnails {
+  height: 20%;
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.fas {
+  font-size: 3rem;
+  position: absolute;
+  left: calc(100% - (25% / 2));
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
+
+#thumbnails .selected {
+  border: 5px solid lightcoral;
+  filter: grayscale(0);
+}
